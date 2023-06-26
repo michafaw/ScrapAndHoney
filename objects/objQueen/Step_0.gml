@@ -49,3 +49,10 @@ if (bbox_top + dy >= minY &&
 }
 
 
+for(var i = 0; i < array_length(attachedParts); i++) {
+	var part = attachedParts[i];
+	part.x = x + part.attachOffsetX;
+	part.y = y + part.attachOffsetY;
+}
+
+

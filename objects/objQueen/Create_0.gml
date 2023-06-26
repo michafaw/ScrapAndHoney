@@ -35,6 +35,13 @@ if (currentWorkerCount < baseWorkerCount) {
 }
 
 
+attachedParts = [];
+queenHead = instance_create_depth(x,y,depth-1, objQueenHead);
+
+queenHead.attachOffsetX = 0;
+queenHead.attachOffsetY = -100;
+array_push(attachedParts, queenHead);
+
 
 
 /*

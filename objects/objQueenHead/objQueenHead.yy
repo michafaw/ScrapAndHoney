@@ -1,10 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objQueen",
+  "name": "objQueenHead",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
@@ -14,8 +12,8 @@
     "path": "folders/Objects/Queen Parts.yy",
   },
   "parentObjectId": {
-    "name": "objPausable",
-    "path": "objects/objPausable/objPausable.yy",
+    "name": "objTurret",
+    "path": "objects/objTurret/objTurret.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprQueenBody",
-    "path": "sprites/sprQueenBody/sprQueenBody.yy",
+    "name": "sprQueenHeadLarge",
+    "path": "sprites/sprQueenHeadLarge/sprQueenHeadLarge.yy",
   },
   "spriteMaskId": null,
   "visible": true,
