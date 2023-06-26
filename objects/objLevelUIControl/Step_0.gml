@@ -8,9 +8,13 @@ if (live_call()) return live_result;
 
 if (keyboard_check_pressed(vk_escape)) {
 	// Open up a menu or something
-	
-	
-	
+	if (gameIsPaused) {
+		unpauseAll();
+		gameIsPaused = false;
+	} else {
+		pauseAll();
+		gameIsPaused = true;
+	}
 	
 } else if (keyboard_check_pressed(vk_backspace)) {
 	// Stop all music before we return to the title screen

@@ -3,7 +3,8 @@
 // if (live_call(argument0, argument1)) return live_result; // For 2 arg scripts
 if (live_call()) return live_result;
 
-show_debug_message("Starting Level UI Object");
+lastShownFrame = 0
+savedImageSpeed = image_speed;
+savedSpeed = speed;
 
-
-gameIsPaused = false;
+isPaused = false;
