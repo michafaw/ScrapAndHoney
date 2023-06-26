@@ -6,12 +6,5 @@ if (live_call()) return live_result;
 // Inherit the parent event
 event_inherited();
 
-var scale = 1.0;
-image_xscale = scale;
-image_yscale = scale;
-
-attachOffsetX = 10;
-attachOffsetY = -65;
-
-shotOffsetX = -5;
-shotOffsetY = 42;
+//attachOffsetX = 10;
+//attachOffsetY = -65;

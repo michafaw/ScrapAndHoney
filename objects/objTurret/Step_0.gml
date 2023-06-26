@@ -15,8 +15,7 @@ if(shotTimeLeft > 0) {
 } else {
 	// Create a bullet and reset the cooldown
 	shotTimeLeft = shotCooldown;
-	sprayAngle = 10;
 	var bullet = instance_create_layer(x+shotOffsetX, y+shotOffsetY, "Bullet", objBullet);
-	var shotAngle = bullet.direction + random_range(-sprayAngle/2.0, sprayAngle/2.0);
+	var shotAngle = shotDirection + random_range(-sprayAngle/2.0, sprayAngle/2.0);
 	bullet.direction = shotAngle
 }
