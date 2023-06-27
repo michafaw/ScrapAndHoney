@@ -4,3 +4,9 @@
 if (live_call()) return live_result;
 
 show_debug_message("Starting Title Screen");
+
+
+// Start the music
+audio_stop_all();
+// This is the loop section instead of the intro. Fix later -- Micha TODO
+audio_play_sound(Main_menu_loop, 0, true);
