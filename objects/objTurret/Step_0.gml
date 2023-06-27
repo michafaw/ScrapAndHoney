@@ -10,12 +10,15 @@ if (isPaused) {
 	exit;
 }
 
-if(shotTimeLeft > 0) {
-	shotTimeLeft--;	
-} else {
-	// Create a bullet and reset the cooldown
-	shotTimeLeft = shotCooldown;
-	var bullet = instance_create_layer(x+shotOffsetX, y+shotOffsetY, "Bullet", objBullet);
-	var shotAngle = shotDirection + random_range(-sprayAngle/2.0, sprayAngle/2.0);
-	bullet.direction = shotAngle
+// Bullets are disabled if the cooldown is < 0
+if (shotCooldown > 0) {
+	if(shotTimeLeft > 0) {
+		shotTimeLeft--;	
+	} else {
+		// Create a bullet and reset the cooldown
+		shotTimeLeft = shotCooldown;
+		var bullet = instance_create_layer(x+shotOffsetX, y+shotOffsetY, "Bullet", objBullet);
+		var shotAngle = shotDirection + random_range(-sprayAngle/2.0, sprayAngle/2.0);
+		bullet.direction = shotAngle
+	}
 }

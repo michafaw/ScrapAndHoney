@@ -6,5 +6,5 @@ if (live_call()) return live_result;
 // Inherit the parent event
 event_inherited();
 
-//attachOffsetX = 10;
-//attachOffsetY = -65;
+attachOffsetX = 25;
+attachOffsetY = -90;

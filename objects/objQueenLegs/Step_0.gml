@@ -6,11 +6,3 @@ if (live_call()) return live_result;
 // Inherit the parent event
 event_inherited();
 
-attachOffsetX = 25;
-attachOffsetY = -90;
-
-shotOffsetX = -5;
-shotOffsetY = 42;
-
-shotDirection = 270;
-sprayAngle = 5;

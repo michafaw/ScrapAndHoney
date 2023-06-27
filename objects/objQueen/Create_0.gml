@@ -36,8 +36,18 @@ if (currentWorkerCount < baseWorkerCount) {
 
 
 attachedParts = [];
-queenHead = instance_create_depth(x,y,depth-1, objQueenHead);
+queenHead = instance_create_depth(x,y,depth-10, objQueenHead);
 array_push(attachedParts, queenHead);
+
+queenLegs = instance_create_depth(x,y,depth-5, objQueenLegs);
+array_push(attachedParts, queenLegs);
+
+queenForelegLeft = noone;
+queenForelegRight = noone;
+queenMidlegLeft = noone;
+queenMidlegRight = noone;
+queenHindlegLeft = noone;
+queenHindlegRight = noone;
 
 
 
