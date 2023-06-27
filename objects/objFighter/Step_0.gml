@@ -6,12 +6,9 @@ if (live_call()) return live_result;
 // Inherit the parent event
 event_inherited();
 
-attachOffsetX = 25;
-attachOffsetY = -90;
+if (isPaused) {
+	exit;	
+}
 
-shotOffsetX = -5;
-shotOffsetY = 42;
-
-shotCooldown = room_speed*0.2;
-shotDirection = 270;
-sprayAngle = 12;
+shotDirection = direction;
+image_angle = direction;

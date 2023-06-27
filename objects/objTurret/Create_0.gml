@@ -21,3 +21,5 @@ sprayAngle = 0;
 
 shotCooldown = room_speed*1.0;
 shotTimeLeft = shotCooldown;
+
+bulletType = objBulletQueen;

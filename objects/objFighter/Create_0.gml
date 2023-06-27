@@ -6,12 +6,13 @@ if (live_call()) return live_result;
 // Inherit the parent event
 event_inherited();
 
-attachOffsetX = 25;
-attachOffsetY = -90;
 
-shotOffsetX = -5;
-shotOffsetY = 42;
+speed = 1.0;
+direction = 90;
+shotDirection = 90; // Updates in the step event
 
-shotCooldown = room_speed*0.2;
-shotDirection = 270;
-sprayAngle = 12;
+shotCooldown = room_speed*0.75;
+shotTimeLeft = shotCooldown;
+
+
+bulletType = objBulletFighter;

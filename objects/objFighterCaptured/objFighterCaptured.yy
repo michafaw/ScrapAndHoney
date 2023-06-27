@@ -1,10 +1,9 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objBullet",
+  "name": "objFighterCaptured",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -13,8 +12,8 @@
     "path": "folders/Objects.yy",
   },
   "parentObjectId": {
-    "name": "objPausable",
-    "path": "objects/objPausable/objPausable.yy",
+    "name": "objTurret",
+    "path": "objects/objTurret/objTurret.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -32,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sprBullet",
-    "path": "sprites/sprBullet/sprBullet.yy",
+    "name": "sprFighterCaptured",
+    "path": "sprites/sprFighterCaptured/sprFighterCaptured.yy",
   },
   "spriteMaskId": null,
   "visible": true,

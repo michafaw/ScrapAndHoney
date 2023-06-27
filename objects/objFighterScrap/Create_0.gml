@@ -6,12 +6,4 @@ if (live_call()) return live_result;
 // Inherit the parent event
 event_inherited();
 
-attachOffsetX = 25;
-attachOffsetY = -90;
-
-shotOffsetX = -5;
-shotOffsetY = 42;
-
-shotCooldown = room_speed*0.2;
-shotDirection = 270;
-sprayAngle = 12;
+spinDelta = choose(1.0, 3.0, 5.0, -1.5, -2.5);

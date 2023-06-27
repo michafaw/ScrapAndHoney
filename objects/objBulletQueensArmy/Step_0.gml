@@ -6,12 +6,10 @@ if (live_call()) return live_result;
 // Inherit the parent event
 event_inherited();
 
-attachOffsetX = 25;
-attachOffsetY = -90;
 
-shotOffsetX = -5;
-shotOffsetY = 42;
-
-shotCooldown = room_speed*0.2;
-shotDirection = 270;
-sprayAngle = 12;
+if (x > room_width+destroyMargin ||
+	x < -destroyMargin ||
+	y > room_height+destroyMargin ||
+	y < -destroyMargin) {
+	instance_destroy();		
+}
