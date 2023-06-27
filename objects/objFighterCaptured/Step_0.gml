@@ -6,9 +6,4 @@ if (live_call()) return live_result;
 // Inherit the parent event
 event_inherited();
 
-damage = 1;
-speed = 3;
-direction = 180;
-
-
-destroyMargin = 100; // Pixels outside the screen to destroy the bullet
+shotDirection = image_angle;
