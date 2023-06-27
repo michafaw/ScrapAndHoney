@@ -6,4 +6,4 @@ if (live_call()) return live_result;
 draw_set_color(c_white)
 draw_set_halign(fa_right)
 draw_set_valign(fa_top)
-draw_text(room_width-10, 10, "Wave 1");
+draw_text(room_width-10, 10, string(score));

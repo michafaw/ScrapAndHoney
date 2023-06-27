@@ -8,3 +8,10 @@ draw_set_color(c_white)
 draw_set_halign(fa_right)
 draw_set_valign(fa_top)
 draw_text(room_width-10, 10, "Queens of Scrap and Honey");
+
+draw_text(room_width-10, 50, "A game by Micha & Labib");
+
+draw_text(room_width-10, 200, "Last score: " + string(score));
+
+
+draw_text(room_width-10, room_height-80, "Arrows to move\nBackspace to quit");

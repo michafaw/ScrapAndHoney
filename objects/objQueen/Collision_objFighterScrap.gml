@@ -20,3 +20,5 @@ array_push(attachedParts, capturedFighter);
 with(other) {
 	instance_destroy();	
 }
+
+score += 5;

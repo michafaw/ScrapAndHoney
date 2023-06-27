@@ -3,15 +3,15 @@
 // if (live_call(argument0, argument1)) return live_result; // For 2 arg scripts
 if (live_call()) return live_result;
 
-// Inherit the parent event
-event_inherited();
 
-attachOffsetX = 25;
-attachOffsetY = -90;
 
-shotOffsetX = -5;
-shotOffsetY = 42;
+currentHP -= other.damage;
 
-shotCooldown = room_speed*0.2;
-shotDirection = 270;
-sprayAngle = 8;
+score -= 1;// Temporary hack for now
+if (score < 0) {
+	score = 0;
+}
+
+with(other) {
+	instance_destroy();	
+}

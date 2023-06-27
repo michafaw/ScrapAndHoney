@@ -6,7 +6,7 @@ if (live_call()) return live_result;
 // Inherit the parent event
 event_inherited();
 
-damage = 1;
+damage = 5;
 speed = 3;
 direction = 270;
 
